@@ -59,7 +59,7 @@ export default function Home() {
       </div>
       <style jsx>
         {`
-          @media (max-width: 767px) {
+          @media (max-width: 900px) {
             #install-banner {
               display: flex;
             }
