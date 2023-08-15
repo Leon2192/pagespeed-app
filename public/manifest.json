@@ -1,0 +1,32 @@
+{
+    "name": "Solution Page Speed",
+    "short_name": "Solution App",
+    "icons": [
+        {
+            "src": "/logosbox.png",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/vercel-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/vercel-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0070f3",
+    "orientation": "portrait"
+}

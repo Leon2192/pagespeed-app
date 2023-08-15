@@ -1,0 +1,16 @@
+/* Landing.css */
+@keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.min-h-screen {
+    /* Resto de tus estilos */
+    animation: animateBackground 10s linear infinite;
+    background: linear-gradient(-45deg, #f2b5d4 0%, #ef233c 25%, #2b2d42 50%, #003249 50%, #ff0a54 75%, #355070 75%, #edf2f4 100%);
+    background-size: 200% 200%;
+}
