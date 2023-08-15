@@ -57,7 +57,7 @@ export default function Home() {
             className="w-6 h-6 mr-2"
             style={{ alignSelf: "center" }} // Añadir esta línea
           />
-          Instalar la aplicación
+          Instalar esta aplicacion
         </div>
     <Landing />
     </>
