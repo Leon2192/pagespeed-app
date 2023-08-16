@@ -39,15 +39,16 @@ export default function Home() {
 
       <Head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <style>
+        <style jsx>
           {`
-              @media (min-width: 1024px) {
-                #install-banner {
-                  display: none;
-                }
-              }
-            `}
+    @media (max-width: 900px) {
+      #install-banner {
+        display: none; /* Ocultar en dispositivos móviles */
+      }
+    }
+  `}
         </style>
+
       </Head>
       <Landing />
       <div
