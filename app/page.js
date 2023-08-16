@@ -12,9 +12,7 @@ export default function Home() {
       window.addEventListener("beforeinstallprompt", (event) => {
         event.preventDefault();
 
-        setTimeout(() => {
-          setShowBanner(true);
-        }, 3000);
+        setShowBanner(true);
 
         event.prompt();
         event.userChoice.then((choiceResult) => {
@@ -55,6 +53,15 @@ export default function Home() {
           Instalar esta aplicación
         </div>
       )}
+      <style jsx>
+        {`
+          @media (max-width: 900px) {
+            #install-banner {
+              display: flex; /* Mostrar en dispositivos móviles */
+            }
+          }
+        `}
+      </style>
     </>
   );
 }
