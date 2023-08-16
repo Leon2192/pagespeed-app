@@ -15,7 +15,7 @@ export default function Home() {
           installBanner.style.opacity = "1";
         }, 3000);
 
-        installBanner.style.display = "flex";
+        installBanner.style.display = "none"; // Ocultar en la carga inicial
 
         installBanner.addEventListener("click", () => {
           event.prompt();
@@ -46,7 +46,6 @@ export default function Home() {
           zIndex: "1000",
           transition: "opacity 0.5s",
           opacity: "0",
-          display: "none",
         }}
       >
         <img
@@ -61,7 +60,7 @@ export default function Home() {
         {`
           @media (max-width: 900px) {
             #install-banner {
-              display: flex;
+              display: flex; /* Mostrar en dispositivos móviles */
             }
           }
         `}
