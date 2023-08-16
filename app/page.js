@@ -41,12 +41,18 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <style jsx>
           {`
-    @media (max-width: 900px) {
-      #install-banner {
-        display: none; /* Ocultar en dispositivos móviles */
+      @media (max-width: 900px) {
+        #install-banner {
+          opacity: 0; /* Ocultar en pantallas más grandes */
+        }
       }
-    }
-  `}
+
+      @media (max-width: 670px) {
+        #install-banner {
+          opacity: 1; /* Mostrar solo en dispositivos móviles */
+        }
+      }
+    `}
         </style>
 
       </Head>
