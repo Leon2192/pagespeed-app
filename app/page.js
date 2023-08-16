@@ -12,16 +12,23 @@ export default function Home() {
 
       window.addEventListener("beforeinstallprompt", (event) => {
         event.preventDefault();
+        const installBanner = document.getElementById("install-banner");
 
-        setShowBanner(true);
+        setTimeout(() => {
+          installBanner.style.opacity = "1"; // Mostrar el banner después de un retraso
+        }, 3000); // Cambiar a la cantidad de milisegundos que deseas (3 segundos en este caso)
 
-        event.prompt();
-        event.userChoice.then((choiceResult) => {
-          if (choiceResult.outcome === "accepted") {
-            console.log("El usuario aceptó instalar la PWA");
-          } else {
-            console.log("El usuario rechazó la instalación de la PWA");
-          }
+        installBanner.style.display = "flex"; // Cambiar display a "flex"
+
+        installBanner.addEventListener("click", () => {
+          event.prompt();
+          event.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === "accepted") {
+              console.log("El usuario aceptó instalar la PWA");
+            } else {
+              console.log("El usuario rechazó la instalación de la PWA");
+            }
+          });
         });
       });
     }
