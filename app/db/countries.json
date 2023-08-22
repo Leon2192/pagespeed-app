@@ -16,6 +16,11 @@
             "avatar": "/banderas/sv.png"
         },
         {
+            "name": "Guatemala",
+            "url": "https://www.solutionbox.com.gt/",
+            "avatar": "/banderas/gt.png"
+        },
+        {
             "name": "Honduras",
             "url": "https://www.solutionbox.com.hn/",
             "avatar": "/banderas/hn.png"
